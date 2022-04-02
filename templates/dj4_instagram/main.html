@@ -11,10 +11,26 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
           rel="stylesheet">
     <title>Hello, world!</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+     style="position: fixed; width: 100%; background-color: rgba(var(--d87,255,255,255),1); border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);">
+    <div class="container-fluid" style="justify-content: space-evenly; flex-wrap: nowrap; min-width: 1000px;">
         <a class="navbar-brand" href="#"><img style="width: 100px;"
                                               src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"></a>
         <input class="form-control me-2" style="width: 400px " type="search" placeholder="Search" aria-label="Search">
@@ -28,6 +44,46 @@
         </div>
     </div>
 </nav>
+
+<div style="display: flex; flex-direction: row; text-align:center; justify-content: center; padding-top: 60px; background-color: rgba(var(--b3f,250,250,250),1); ">
+    <div style="width: 614px; min-width: 614px; height: 1000px; margin-right: 256px;">
+        <div style="border: solid 1px gray; background-color: white;">
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <div class="box" style="width: 50px; height: 50px;">
+                    <img src="https://i.pinimg.com/originals/42/d4/0a/42d40acf795f7244462d307440f82edd.png"
+                         alt="IU" class="profile">
+                </div>
+                <div style="margin-left: 10px;">
+                    IU 이지금
+                </div>
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IU_in_%22Love_Poem%22_Concert_in_Seoul_on_23rd_November_2019.jpg/1200px-IU_in_%22Love_Poem%22_Concert_in_Seoul_on_23rd_November_2019.jpg"
+                     alt=""
+                     style="width: 100%;">
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between">
+                <div>
+                    <span class="material-icons-outlined">favorite_border</span>
+                    <span class="material-icons-outlined">question_answer</span>
+                    <span class="material-icons-outlined">send</span>
+                </div>
+                <div>
+                    <span class="material-icons-outlined">bookmark_border</span>
+                </div>
+            </div>
+            <div style="text-align: left; margin-left: 5px; font-size: 14px;"><b>i3est</b>님 <b>외 19명</b>이 좋아합니다.</div>
+            <div style="text-align: left; margin-left: 5px; font-size: 18px;">
+                <b>I3estCDS</b> #IU 진짜 이쁘다.<br>
+                <b>silvery</b> #IU 진짜 이쁘다.<br>
+                <b>ikarus1004</b> #IU 진짜 이쁘다.<br>
+                <b>brigfhtening</b> #IU 진짜 이쁘다.<br>
+            </div>
+            <div>댓글입력창</div>
+        </div>
+    </div>
+    <div style="width: 400px; height: 1000px; background: orange; position: fixed; left:62%;">오른쪽</div>
+</div>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
